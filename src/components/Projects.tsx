@@ -5,26 +5,29 @@ import automationWorkspace from "@/assets/automation-workspace.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "Automatización de Workflows",
-      description: "Sistema completo de automatización empresarial utilizando n8n para optimizar procesos y reducir tareas manuales.",
-      tech: ["n8n", "JavaScript", "APIs", "Webhooks"],
+      title: "Landing Page de DMind",
+      description: "Presentacion del emprendimiento DMind",
+      tech: ["TypeScript", "Node.js", "Vite", "React", "Tailwind CSS"],
       status: "Completado",
       color: "primary",
-      image: automationWorkspace
+      image: automationWorkspace,
+      url: "https://profound-longma-1f330f.netlify.app"
     },
     {
-      title: "Dashboard de Gestión",
-      description: "Interfaz web moderna para monitoreo y control de procesos automatizados con métricas en tiempo real.",
-      tech: ["JavaScript", "SQL", "Chart.js", "REST APIs"],
-      status: "En Desarrollo",
-      color: "secondary"
+      title: "Plataforma de campañas masivas de WhatsApp",
+      description: "Sistema completo de automatización empresarial utilizando n8n para optimizar procesos y reducir tareas manuales de en envio de mensajes masivos de WhatsApp",
+      tech: ["TypeScript", "Node.js", "PostgreSQL", "N8N", "Vite", "React", "Tailwind CSS"],
+      status: "Completado",
+      color: "accent",
+      url: "https://amazing-valkyrie-6ec579.netlify.app"
     },
     {
-      title: "Sistema de Integración",
-      description: "Conectores personalizados para integrar diferentes plataformas y servicios de manera fluida.",
-      tech: ["Java", "SQL", "n8n", "API Integration"],
-      status: "Planificado",
-      color: "accent"
+      title: "Plataforma de Streaming",
+      description: "Sistema de renta de cuentas para plataformas de streaming como Netflix, Disney+, Amazon Prime, etc.",
+      tech: ["TypeScript", "Node.js", "PostgreSQL", "N8N", "Vite", "React", "Tailwind CSS"],
+      status: "Completado",
+      color: "accent",
+      url: "https://nytrix.netlify.app"
     }
   ];
 
@@ -48,8 +51,8 @@ const Projects = () => {
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="relative h-64 lg:h-auto">
                 <img 
-                  src={automationWorkspace} 
-                  alt="Automatización con n8n workspace"
+                  src={projects[0].image} 
+                  alt={projects[0].title}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/50 lg:to-background/80"></div>
@@ -59,15 +62,13 @@ const Projects = () => {
                   Proyecto Destacado
                 </span>
                 <h3 className="font-orbitron text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Sistema de Automatización Avanzado
+                  {projects[0].title}
                 </h3>
                 <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                  Plataforma completa de automatización desarrollada con n8n que revoluciona 
-                  los procesos empresariales, reduciendo el trabajo manual en un 80% y 
-                  aumentando la eficiencia operacional.
+                  {projects[0].description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {["n8n", "JavaScript", "REST APIs", "Webhooks", "Database Integration"].map((tech) => (
+                  {projects[0].tech.map((tech) => (
                     <span 
                       key={tech}
                       className="px-3 py-1 bg-primary/20 border border-primary/30 rounded text-xs font-inter text-primary"
@@ -76,12 +77,14 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <Button 
-                  size="lg"
-                  className="w-fit font-orbitron bg-gradient-neon text-primary-foreground hover:shadow-neon-strong transition-all duration-300"
-                >
-                  Ver Detalles del Proyecto
-                </Button>
+                <a href={projects[0].url} target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    size="lg"
+                    className="w-fit font-orbitron bg-gradient-neon text-primary-foreground hover:shadow-neon-strong transition-all duration-300"
+                  >
+                    Ver Proyecto
+                  </Button>
+                </a>
               </div>
             </div>
           </Card>
@@ -140,19 +143,39 @@ const Projects = () => {
                 </div>
 
                 {/* Action Button */}
-                <Button 
-                  size="sm" 
-                  variant="outline"
-                  className={`w-full font-inter ${
-                    project.color === 'primary' ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' :
-                    project.color === 'secondary' ? 'border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground' :
-                    'border-accent text-accent hover:bg-accent hover:text-accent-foreground'
-                  } transition-all duration-300 hover:shadow-neon`}
-                >
-                  {project.status === 'Completado' ? 'Ver Detalles' : 
-                   project.status === 'En Desarrollo' ? 'Seguir Progreso' : 
-                   'Próximamente'}
-                </Button>
+                {project.status === 'Completado' ? (
+                  <a 
+                    href={project.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button 
+                      size="sm" 
+                      variant="outline"
+                      className={`w-full font-inter ${
+                        project.color === 'primary' ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground' :
+                        project.color === 'secondary' ? 'border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground' :
+                        'border-accent text-accent hover:bg-accent hover:text-accent-foreground'
+                      } transition-all duration-300 hover:shadow-neon`}
+                    >
+                      Ver Proyecto
+                    </Button>
+                  </a>
+                ) : (
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    className={`w-full font-inter ${
+                      project.color === 'primary' ? 'border-primary/30 text-primary/70' :
+                      project.color === 'secondary' ? 'border-secondary/30 text-secondary/70' :
+                      'border-accent/30 text-accent/70'
+                    }`}
+                    disabled
+                  >
+                    {project.status === 'En Desarrollo' ? 'En Desarrollo' : 'Próximamente'}
+                  </Button>
+                )}
               </div>
             </Card>
           ))}
