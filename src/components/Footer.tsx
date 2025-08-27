@@ -24,14 +24,14 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="text-center">
             <div className="flex justify-center space-x-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <a href="https://www.linkedin.com/in/xsergiodm" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 LinkedIn
               </a>
               <a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">
                 GitHub
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                Email
+              <a href="https://www.instagram.com/xsergio_dm" className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                Instagram
               </a>
             </div>
           </div>
