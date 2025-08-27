@@ -33,6 +33,9 @@ const Footer = () => {
               <a href="https://www.instagram.com/xsergio_dm" className="text-muted-foreground hover:text-accent transition-colors text-sm">
                 Instagram
               </a>
+              <a href="https://onlyfans.com/xsergiodm" className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                OnlyFans
+              </a>
             </div>
           </div>
           
