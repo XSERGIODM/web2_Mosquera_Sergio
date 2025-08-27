@@ -27,7 +27,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/xsergiodm" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 LinkedIn
               </a>
-              <a href="#" className="text-muted-foreground hover:text-secondary transition-colors text-sm">
+              <a href="https://github.com/XSERGIODM" className="text-muted-foreground hover:text-secondary transition-colors text-sm">
                 GitHub
               </a>
               <a href="https://www.instagram.com/xsergio_dm" className="text-muted-foreground hover:text-accent transition-colors text-sm">
