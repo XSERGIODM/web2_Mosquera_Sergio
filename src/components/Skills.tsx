@@ -138,6 +138,20 @@ const Skills = () => {
           </Card>
         </div>
       </div>
+      
+      {/* Botón de descarga de hoja de vida - Fijo en la parte inferior */}
+      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+        <a 
+          href="/doc/hoja_de_vida.pdf" 
+          download="Hoja_de_Vida_Sergio_Mosquera.pdf"
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-primary/80 text-white font-orbitron font-medium rounded-lg hover:shadow-neon-strong transition-all duration-300 shadow-lg"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+          </svg>
+          Descargar Hoja de Vida
+        </a>
+      </div>
     </section>
   );
 };
