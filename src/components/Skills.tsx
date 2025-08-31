@@ -117,7 +117,7 @@ const Skills = () => {
                     🏆 Especialización en n8n
                   </h3>
                   <p className="text-muted-foreground text-lg mb-4">
-                    El profesional más capacitado en automatización con n8n en Florencia, Caquetá. 
+                    El profesional capacitado en automatización con n8n en Florencia, Caquetá. 
                     Experiencia desde 2024 creando flujos de trabajo automatizados complejos.
                   </p>
                   <div className="flex items-center gap-4">

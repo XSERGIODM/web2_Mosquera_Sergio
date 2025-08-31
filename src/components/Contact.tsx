@@ -129,6 +129,12 @@ const Contact = () => {
                     size="lg" 
                     variant="outline"
                     className="w-full font-orbitron border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                    onClick={() => {
+                      const element = document.getElementById('projects');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
                   >
                     Ver Portfolio Completo
                   </Button>

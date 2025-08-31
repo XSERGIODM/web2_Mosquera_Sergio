@@ -3,7 +3,7 @@ import heroAvatar from "@/assets/hero-avatar.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-dark relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-dark relative overflow-hidden py-16 lg:py-0">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.1)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse"></div>
       
@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute top-3/4 right-1/4 w-24 h-24 bg-secondary rounded-full blur-xl opacity-20 animate-float" style={{ animationDelay: '1s' }}></div>
       <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-accent rounded-full blur-xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
       
-      <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto px-6 z-10">
+      <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto px-6 z-10 pt-20 lg:pt-0">
         {/* Avatar Section */}
         <div className="flex justify-center lg:justify-end order-2 lg:order-1">
           <div className="relative">
@@ -63,6 +63,12 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="font-orbitron bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon hover:shadow-neon-strong transition-all duration-300 border border-primary/50"
+              onClick={() => {
+                const element = document.getElementById('projects');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               Ver Proyectos
             </Button>
@@ -70,6 +76,7 @@ const Hero = () => {
               size="lg" 
               variant="outline" 
               className="font-orbitron border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground shadow-neon hover:shadow-neon-strong transition-all duration-300"
+              onClick={() => window.open('https://wa.me/573102340024?text=¡Hola%20Sergio!%20Vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte.', '_blank')}
             >
               Contactar
             </Button>

@@ -14,20 +14,20 @@ const Projects = () => {
       url: "https://profound-longma-1f330f.netlify.app"
     },
     {
-      title: "Plataforma de campañas masivas de WhatsApp",
-      description: "Sistema completo de automatización empresarial utilizando n8n para optimizar procesos y reducir tareas manuales de en envio de mensajes masivos de WhatsApp",
-      tech: ["TypeScript", "Node.js", "PostgreSQL", "N8N", "Vite", "React", "Tailwind CSS"],
-      status: "Completado",
-      color: "accent",
-      url: "https://amazing-valkyrie-6ec579.netlify.app"
-    },
-    {
       title: "Plataforma de Streaming",
       description: "Sistema de renta de cuentas para plataformas de streaming como Netflix, Disney+, Amazon Prime, etc.",
       tech: ["TypeScript", "Node.js", "PostgreSQL", "N8N", "Vite", "React", "Tailwind CSS"],
       status: "Completado",
       color: "accent",
       url: "https://nytrix.netlify.app"
+    },
+    {
+      title: "Plataforma de campañas masivas de WhatsApp",
+      description: "Sistema completo de automatización empresarial utilizando n8n para optimizar procesos y reducir tareas manuales de en envio de mensajes masivos de WhatsApp",
+      tech: ["TypeScript", "Node.js", "PostgreSQL", "N8N", "Vite", "React", "Tailwind CSS"],
+      status: "Completado",
+      color: "accent",
+      url: "https://amazing-valkyrie-6ec579.netlify.app"
     }
   ];
 
@@ -193,6 +193,7 @@ const Projects = () => {
             <Button 
               size="lg"
               className="font-orbitron bg-gradient-neon text-primary-foreground hover:shadow-neon-strong transition-all duration-300"
+              onClick={() => window.open('https://wa.me/573102340024?text=¡Hola%20Sergio!%20Vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo%20sobre%20un%20proyecto.', '_blank')}
             >
               Iniciar Conversación
             </Button>
