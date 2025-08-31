@@ -4,10 +4,16 @@ import { Progress } from "@/components/ui/progress";
 const Skills = () => {
   const skills = [
     {
-      name: "JavaScript",
-      level: 90,
+      name: "n8n Automation",
+      level: 95,
       color: "primary",
-      category: "Lenguajes"
+      category: "Automatización"
+    },
+    {
+      name: "Wordpress",
+      level: 65,
+      color: "secondary",
+      category: "CMS"
     },
     {
       name: "Java",
@@ -16,20 +22,110 @@ const Skills = () => {
       category: "Lenguajes"
     },
     {
+      name: "JavaScript",
+      level: 65,
+      color: "secondary",
+      category: "Lenguajes"
+    },
+    {
+      name: "TypeScript",
+      level: 50,
+      color: "secondary",
+      category: "Lenguajes"
+    },
+    {
+      name: "Python",
+      level: 65,
+      color: "secondary",
+      category: "Lenguajes"
+    },
+    {
+      name: "Kotlin",
+      level: 65,
+      color: "secondary",
+      category: "Lenguajes"
+    },
+    {
+      name: "Spring Boot",
+      level: 85,
+      color: "secondary",
+      category: "Frameworks"
+    },
+    {
+      name: "Angular",
+      level: 65,
+      color: "secondary",
+      category: "Frameworks"
+    },
+    {
+      name: "React",
+      level: 20,
+      color: "secondary",
+      category: "Frameworks"
+    },
+    {
+      name: "Next.js",
+      level: 20,
+      color: "secondary",
+      category: "Frameworks"
+    },
+    {
+      name: "Node.js",
+      level: 20,
+      color: "secondary",
+      category: "Frameworks"
+    },
+    {
+      name: "Vite",
+      level: 30,
+      color: "secondary",
+      category: "Frameworks"
+    },
+    {
+      name: "Tailwind CSS",
+      level: 10,
+      color: "secondary",
+      category: "Frameworks"
+    },
+    {
       name: "SQL",
       level: 80,
       color: "accent",
       category: "Bases de Datos"
     },
     {
-      name: "n8n Automation",
-      level: 95,
-      color: "primary",
-      category: "Automatización"
+      name: "MySQL",
+      level: 80,
+      color: "accent",
+      category: "Bases de Datos"
+    },
+    {
+      name: "PostgreSQL",
+      level: 80,
+      color: "accent",
+      category: "Bases de Datos"
+    },
+    {
+      name: "MongoDB",
+      level: 30,
+      color: "accent",
+      category: "Bases de Datos"
+    },
+    {
+      name: "Supabase",
+      level: 50,
+      color: "accent",
+      category: "Bases de Datos"
+    },
+    {
+      name: "Redis",
+      level: 60,
+      color: "accent",
+      category: "Bases de Datos"
     }
   ];
 
-  const categories = ["Lenguajes", "Bases de Datos", "Automatización"];
+  const categories = ["Lenguajes", "Frameworks", "Bases de Datos", "Automatización", "CMS"];
 
   return (
     <section className="py-20 bg-gradient-dark relative">
@@ -117,7 +213,7 @@ const Skills = () => {
                     🏆 Especialización en n8n
                   </h3>
                   <p className="text-muted-foreground text-lg mb-4">
-                    El profesional capacitado en automatización con n8n en Florencia, Caquetá. 
+                    Profesional capacitado en automatización con n8n. 
                     Experiencia desde 2024 creando flujos de trabajo automatizados complejos.
                   </p>
                   <div className="flex items-center gap-4">
